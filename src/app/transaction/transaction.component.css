@@ -1,0 +1,79 @@
+@font-face {
+  font-family: 'cavierb';
+  src: url(../../assets/Fonts/CaviarDreams_Bold.ttf);
+}
+
+@font-face {
+  font-family: 'cavierit';
+  src: url(../../assets/Fonts/CaviarDreams_Italic.ttf);
+}
+
+@font-face {
+  font-family: cavierbit;
+  src: url(../../assets/Fonts/CaviarDreams_BoldItalic.ttf);
+}
+
+@font-face {
+  font-family: khandRlr;
+  src: url(../../assets/Fonts/Khand-Regular.ttf);
+}
+
+@font-face {
+  font-family: KhandSemi;
+  src: url(../../assets/Fonts/Khand-Semibold.ttf);
+}
+@font-face {
+  font-family: 'poppins';
+  src: url(../../assets/Fonts/Poppins-Regular.otf);
+}
+@font-face {
+  font-family: poppinsit;
+  src: url(../../assets/Fonts/Poppins-Italic.otf);
+}
+@font-face {
+  font-family: poppinsbol;
+  src: url(../../assets/Fonts/Poppins-Bold.otf);
+}
+
+
+table,th,tr,td{
+    color: rgb(0, 0, 0);
+    border: 2px solid rgb(0, 0, 0);
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}a:link {
+    color: #ff0059;
+    text-decoration: none;
+  }
+  
+
+  a:visited {
+    color: #ff0000;
+  }
+  
+  
+  a:hover {
+    color: rgb(52, 137, 255);
+  }
+  
+
+  a:active {
+    color: rgb(255, 0, 89);
+  }
+  h1 {
+    color: rgb(255, 255, 255);
+    font-family: 'cavierb', sans-serif;
+    font-size: 40px;
+}
+h2 {
+    color: rgb(0, 0, 0);
+    font-family: 'khandSemi', sans-serif;
+    font-size: 40px;
+}
+h5 {
+    color: rgb(0, 0, 0);
+    font-family: 'khandSemi', sans-serif;
+    font-size: 20px;
+}

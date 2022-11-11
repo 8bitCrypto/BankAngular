@@ -6,24 +6,26 @@
         </script>
 
 <body style="text-align: center;">
+
+    
     <div class="row  m-5">
         <div class="col-4 "></div>
-        <div id="bod" class="col-4 mt-5 p-5  ">
+        <div id="bod" class="col-4 mt-5  p-3 ">
 
-            <h1 class = "mt-2 ms-3 text-light">
-                IMSA
+            <h1 class = "mt-2 ms-3 ">
+                BANK
             </h1>
             <!-- <h2 class = "mt-2 ms-3 text-light">{{aim}}</h2> -->
-                <img src="../../assets/Images/Washington_Federal-Logo.wine.png" alt="img" style="height: 20%; width: 25% ; align-items: center;" class="mb-4 ms-3">
-            <h1>
-                <input (change)="acnoChange($event)" type="text" id="logacno"  class="form-control mt-3" [placeholder]="acc" >
-            <input (change)="passChange($event)" type="password" id="logpass" class="form-control mt-3" placeholder="Password">
+                <img src="../../assets/Images/512x512.png" alt="img" style="height: 15%; width: 15% ; align-items: center;" class="mb-4 ms-3">
+            <h1 class="ms-4">
+                <input [(ngModel)] ="acno" type="text" id="logacno"  class="form-control mt-3 ms-5" style="height: 40px; width: 70%; align-items: center;"     [placeholder]="acc" >
+            <input [(ngModel)] ="pswd" type="password" id="logpass" class="form-control mt-3 ms-5" style="height: 40px; width: 70%; align-items: center;" placeholder="Password">
             </h1>
-            <h1>
-                <button class="btn btn-success  pe-3 " type="button" (click)="login()" style="height: 50px; width: 100%;" >Login</button>
-            </h1>alert
-            <p class="m-3">
-                <a href="">Forgot Password?</a>  or    <a href="../registration/registration.component.html"  >signup</a>
+            <h2>
+                <button class="btn btn-success mt-3 " type="button" (click)="login()" style="height: 40px; width: 50%;" >Login</button>
+            </h2>
+            <p class="mt-4 ">
+                <a href="">Forgot Password?</a>  or    <a routerLink="registration"  >signup</a>
             </p>
         </div>
         <div class="col-4"></div>

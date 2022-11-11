@@ -37,8 +37,13 @@
 }
 h1 {
     color: rgb(255, 255, 255);
+    font-family: 'cavierb', sans-serif;
+    font-size: 40px;
+}
+h2 {
+    color: rgb(255, 255, 255);
     font-family: 'poppins', sans-serif;
-    font-size: 70px;
+   
 }
 
 h4 {
@@ -75,7 +80,6 @@ body{
     background-repeat: no-repeat;
     justify-content: space-between;
     align-items: center;
-    text-align: center;
     background-attachment: fixed;
     font-family: 'cavierb', sans-serif;
     
@@ -84,15 +88,15 @@ body{
 
     backdrop-filter: blur(16px) saturate(180%);
     -webkit-backdrop-filter: blur(16px) saturate(180%);
-    background-color: rgb(90, 115, 255);
+    background-color: rgb(25, 0, 41);
     border-radius: 12px;
     border: 1px solid rgb(255, 255, 255);
-/* border-radius: 7%; */
-box-shadow: 0 0 50px 2px rgba(29, 1, 57, 0.289)
+border-radius: 7%;
+box-shadow: 0 0 50px 2px rgba(1, 24, 57, 0.71)
 
 }
 .btn-success{
-    background: linear-gradient(to bottom,  #8d17e8 50%,#8d17e8 50%);
+    background: linear-gradient(to bottom,  #00a6ff 50%,#00a6ff 50%);
 }
 .btn-success:active{
     background: linear-gradient(to bottom,  #17e86e 50%,#17e86e 50%); /* W3C */

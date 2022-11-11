@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { DataService } from '../Service/data.service';
 
 @Component({
   selector: 'app-login',
@@ -7,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginComponent implements OnInit {
 
-  constructor() { }
+  constructor( private router:Router,private ds: DataService) { }
   aim='qwerty';
   acc="Enter Acc.No";
  acno= '';
@@ -30,20 +32,46 @@ export class LoginComponent implements OnInit {
     this.pswd=event.target.value;
     
   }
+  // login(a:any,p:any){
+  //   // alert("clicked")
+  //   var acno=a.value;
+  //   var pswd=p.value;
+  //   var userDetails=this.userDetails;
+  //   if (acno in userDetails) {
+  //     if (pswd==userDetails[acno]['pass']) {
+  //       alert("Login successful")
+  //     } else {
+  //       alert("incorrect pass")
+  //     }
+  //   }else{
+  //     alert("No account")
+  //   }
+  //   }
+  // login(){
+  //   // alert("clicked")ww
+  //   var acno=this.acno;
+  //   var pswd=this.pswd;
+  //   var userDetails=this.userDetails;
+  //   if (acno in userDetails) {
+  //     if (pswd==userDetails[acno]['pass']) {
+  //       alert("Login successful")
+  //       this.router.navigateByUrl('dashboard');
+  //     } else {
+  //       alert("incorrect pass")
+  //     }
+  //   }else{
+  //     alert("No account")
+  //   }
+  //   }
+
   login(){
-    // alert("clicked")
+    // alert("clicked")ww
     var acno=this.acno;
     var pswd=this.pswd;
-    var userDetails=this.userDetails;
-    if (acno in userDetails) {
-      if (pswd==userDetails[acno]['pass']) {
-        alert("Login successful")
-      } else {
-        alert("incorrect pass")
-      }
-    }else{
-      alert("No account")
-    }
+    const result=this.ds.login(acno,pswd)
+    if(result){
+      alert("login succesfull")
+      this.router.navigateByUrl("dashboard")
     }
 }
-
+}
